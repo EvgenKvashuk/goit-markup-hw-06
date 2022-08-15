@@ -760,6 +760,11 @@ footer {
     background-color: #FFFFFF;
 }
 
+.modal-form-field {
+    display: block;
+    margin-bottom: 10px;
+}
+
 .close-modal {
     cursor: pointer;
 
@@ -833,12 +838,10 @@ footer {
 .modal-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 
 .form-titel {
-
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -868,12 +871,18 @@ footer {
     font-size: 12px;
     line-height: 1.1;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: var(--secondary-text-color);
+    margin-bottom: 4px;
+}
+
+
+.modalform-label-name {
     margin-bottom: 4px;
 }
 
 .footer-form-wrapper {
-    margin-left: 93px;
+    display: block;
+margin-left: 93px;
 }
 
 .footer-form-titel {
@@ -910,6 +919,8 @@ footer {
 .footer-form-field-button {
     cursor: pointer;
 
+border: none;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -939,7 +950,17 @@ footer {
     position: relative;
 }
 
+
+
+.close-icon {
+    display: block;
+    width: 11px;
+    height: 11px;
+}
+
 .modal-form-massge {
+    display: block;
+
     width: 100%;
     height: 120px;
 
@@ -950,7 +971,6 @@ footer {
 
     outline: none;
     resize: none;
-
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1008,7 +1028,7 @@ footer {
 
     cursor: pointer;
 
-    margin-right: 7px;
+    margin-right: 8px;
 }
 
 .modal-chek:checked+.modal-chek-desk::before {
@@ -1026,6 +1046,8 @@ footer {
 
 .modal-chek-desk {
     margin-bottom: 30px;
+
+    justify-content: center;
 
     display: flex;
     align-items: center;
@@ -1046,4 +1068,30 @@ footer {
 
 .police-link {
     color: var(--accent);
+}
+
+.modal-form-field-massage {
+    margin-bottom: 20px;
+}
+
+.modal-button {
+    display: flex;
+
+    width: 200px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 52px;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
 }
